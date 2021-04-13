@@ -89,7 +89,11 @@ body{
 
 /* HOME */
 .carousel-inner {
-    max-height: 939px;
+    /*Força a imagem a tomar toda a largura e altura do display*/
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+    display: block;
 }
 
 .carousel-control-next, .carousel-control-prev {
