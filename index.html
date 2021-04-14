@@ -12,6 +12,19 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+    function scrollto(div)
+    {
+    $('html,body').animate(
+    {
+      scrollTop: $("#"+div).offset().top
+    },'slow');
+    }
+    </script>
+
 
     <title>ELEVE</title>
   </head>
@@ -41,7 +54,7 @@
             </div>
           </div>
       </nav>
-
+    <div id="home">
       <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -80,6 +93,19 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    </div>
+
+    <div id="about">
+      <img src="img/about-us.jpg" class="d-block w-100 h-100" alt="about us" class="img-responsive">
+    </div>
+
+    <div id="services">
+      <img src="img/services.jpg" class="d-block w-100 h-100" alt="services" class="img-responsive">
+    </div>
+
+    <div id="contact"> 
+      <img src="img/contact-us.jpg" class="d-block w-100 h-100" alt="services" class="img-responsive">
+    </div>
 
     <!-- Bootstrap JavaScript -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
