@@ -16,7 +16,7 @@ body{
 /* NAVBAR */
 .navbar {
     min-height: 80px;
-    background-color: #272323;
+    background-color: #526272;
 }
 
 .navbar i {
@@ -88,15 +88,30 @@ body{
 }
 
 /* HOME */
-/*Resolução de Desktop*/
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px){
 .carousel {
     width: 100%;
     height: auto;
-}
+    }
 .carousel-inner img {
   margin: auto;
   height: 100%;
   width: auto;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){
+.carousel {
+    width: 100%;
+    height: auto;
+    }
+.carousel-inner img {
+  margin: auto;
+  height: 100%;
+  width: auto;
+    }
 }
 /*Resolução de Celular*/
 @media handheld, (min-width:300px){
