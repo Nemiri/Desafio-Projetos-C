@@ -11,7 +11,8 @@
     4 - ABOUT
     5 - SERVICES
     6 - CONTACT
-    7 - MEDIA QUERIES
+    7 - FOOTER
+    8 - MEDIA QUERIES
 */
 
 /**********************************/
@@ -26,7 +27,7 @@
 /*              NAVBAR            */
 /**********************************/
 .navbar {
-    min-height: 80px;
+    min-height: 50px;
     background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -116,6 +117,83 @@
 /*             CONTACT            */
 /**********************************/
 
+/**********************************/
+/*             FOOTER             */
+/**********************************/
+#footer {
+    color: #FFF;
+    background-color:rgba(0, 0, 0);
+    padding: 10px;
+    font-size: 12px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#footer a:active {
+    text-decoration: none;
+    color: #40E0D0;
+}
+
+.title {
+    margin-top: 5px;
+}
+
+.title h1 {
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+
+    text-align: center;
+
+    margin-bottom: 0px;
+}
+
+.sub-title {
+    margin-top: 5px;
+}
+
+.sub-title h2 {
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+
+    text-align: center;
+
+    width: 50%;
+    margin-bottom: 5px;
+
+    float: left;
+}
+
+.icons {
+    clear: both;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.icons i {
+    width: 10%;
+}
+
+.adresses {
+    float: right;
+    width: 50%;
+    padding-left: 40px;
+}
+
+.copyright {
+    clear: both;
+    text-align: center;
+    width: 50%;
+}
+
+.copyright i {
+    color: #E74C3C;
+}
 
 /**********************************/
 /*          MEDIA QUERIES         */
@@ -123,6 +201,17 @@
 /* Small devices (mobiles, 300px and up)*/
 @media (min-width: 300px){
     /* NAVBAR Content */
+    .navbar-brand {
+        padding-left: 0.5rem;
+    }
+
+    .navbar-brand img {
+        width: 120px;
+        height: 50px;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
 
     /* end of NAVBAR Content */
 
