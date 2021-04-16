@@ -1,30 +1,37 @@
 /* Custom CSS */
 /* Imports from Bootstrap */
-
 @import "../bootstrap/css/bootstrap.min.css";
 
-/* Global config */
+/**********************************/
+/*             SUMMARY            */
+/*
+    1 - GLOBAL CONFIGS
+    2 - NAVBAR
+    3 - HOME
+    4 - ABOUT
+    5 - SERVICES
+    6 - CONTACT
+    7 - MEDIA QUERIES
+*/
+
+/**********************************/
+/*          GLOBAL CONFIGS        */
+/**********************************/
 *{
     margin: 0px;
     padding: 0px;
 }
 
-body{
-    height: 2000px;
-}
-
-/* NAVBAR */
+/**********************************/
+/*              NAVBAR            */
+/**********************************/
 .navbar {
     min-height: 80px;
-    background-color: #526272;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .navbar i {
     color: #FFF;
-}
-
-.navbar-brand {
-    padding-left: 0.2rem;
 }
 
 .navbar-brand img {
@@ -42,11 +49,11 @@ body{
 
 .nav-item {
     max-height: 52px;
-    margin-right: 3rem;
+    margin-right: 5rem;
 }
 
 .nav-link.active {
-    color: #5CE1E6;
+    color: #40E0D0;
 }
 
 .navbar-nav a {
@@ -62,7 +69,7 @@ body{
 }
 
 .navbar-nav a:hover {
-    color: #5CE1E6;
+    color: #40E0D0;
 
     transition: all 0.5s ease;
 
@@ -87,57 +94,162 @@ body{
     color: #FFF;
 }
 
-/* HOME */
-/*Resolução de Celular (300px pra cima)*/
-@media handheld, (min-width:300px){
-    .carousel-inner{
-        width:100%;
-        height: auto;
-    }
-    .carousel-inner img{
-        object-fit: cover;
-        min-height: 100vh;
-        width: auto;
-        display:inline-block
-    }
-}
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px){
-.carousel {
-    width: 100%;
-    height: auto;
-    }
-.carousel-inner img {
-  margin: auto;
-  max-height: 100vh;
-  width: auto;
-    }
-}
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px){
-.carousel {
-    width: 100%;
-    height: auto;
-    }
-.carousel-inner img {
-  margin: auto;
-  max-height: 100vh;
-  width: auto;
-    }
-}
-
+/**********************************/
+/*              HOME              */
+/**********************************/
 .carousel-control-next, .carousel-control-prev {
     width: 10%;
     opacity: 1;
 }
 
-/*ABOUT US*/
-@media handheld, (min-width:300px){
-    
+/**********************************/
+/*            ABOUT US            */
+/**********************************/
+
+
+/**********************************/
+/*            SERVICES            */
+/**********************************/
+
+
+/**********************************/
+/*             CONTACT            */
+/**********************************/
+
+
+/**********************************/
+/*          MEDIA QUERIES         */
+/**********************************/
+/* Small devices (mobiles, 768px and up)*/
+@media (min-width: 768px){
+    /* NAVBAR Content */
+
+    /* end of NAVBAR Content */
+
+    /* HOME Content */
+        .carousel-inner {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-inner img {
+            object-fit: cover;
+            min-height: 100vh;
+            width: auto;
+            display: inline-block;
+        }
+
+    /* end of HOME Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* SERVICES Content */
+
+    /* end of SERVICES Content */
+
+    /* CONTACT Content */
+
+    /* end of CONTACT Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
 }
+/* end of min-width width 768px */
+
+/* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px){
+    /* NAVBAR Content */
 
+    /* end of NAVBAR Content */
+
+    /* HOME Content */
+        .carousel-inner img {
+            max-height: 100vh;
+        }
+
+    /* end of HOME Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* SERVICES Content */
+
+    /* end of SERVICES Content */
+
+    /* CONTACT Content */
+
+    /* end of CONTACT Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
 }
+/* end of min-width width 992px */
+
+/* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px){
+    /* NAVBAR Content */
+        .navbar-brand {
+            padding-left: 5rem;
+        }
+    /* end of NAVBAR Content */
 
+    /* HOME Content */
+        .carousel-inner img {
+            max-height: 100vh;
+        }
+
+    /* end of HOME Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* SERVICES Content */
+
+    /* end of SERVICES Content */
+
+    /* CONTACT Content */
+
+    /* end of CONTACT Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
 }
+/* end of min-width width 1200px */
+
+/* Extra large devices (extra large sktops, 1600px and up) */
+@media (min-width: 1600px){
+    /* NAVBAR Content */
+
+    /* end of NAVBAR Content */
+
+    /* HOME Content */
+        .carousel-inner img {
+            max-height: 100vh;
+        }
+
+    /* end of HOME Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* SERVICES Content */
+
+    /* end of SERVICES Content */
+
+    /* CONTACT Content */
+
+    /* end of CONTACT Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+}
+/* end of min-width width 1600px */

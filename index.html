@@ -12,26 +12,15 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
-    <!-- Scripts -->
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript">
-    function scrollto(div)
-    {
-    $('html,body').animate(
-    {
-      scrollTop: $("#"+div).offset().top
-    },'slow');
-    }
-    </script>
-
 
     <title>ELEVE</title>
   </head>
+
   <body>
+
       <nav class="navbar navbar-expand-lg fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+            <a class="navbar-brand" href="#about"><img src="img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fas fa-ellipsis-h"></i>
             </button>
@@ -54,61 +43,64 @@
             </div>
           </div>
       </nav>
-    <div id="home">
-      <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+      <div id="home">
+        <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/carrousel-1.jpg" class="d-block w-100 h-100" alt="1" class="img-responsive">
+              <div class="carousel-caption">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/carrousel-2.jpg" class="d-block w-100 h-100" alt="2" class="img-responsive">
+              <div class="carousel-caption">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/carrousel-3.jpg" class="d-block w-100 h-100" alt="3" class="img-responsive">
+              <div class="carousel-caption">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/carrousel-1.jpg" class="d-block w-100 h-100" alt="1" class="img-responsive">
-            <div class="carousel-caption">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrousel-2.jpg" class="d-block w-100 h-100" alt="2" class="img-responsive">
-            <div class="carousel-caption">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrousel-3.jpg" class="d-block w-100 h-100" alt="3" class="img-responsive">
-            <div class="carousel-caption">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
 
     <div id="about">
-      <img src="img/about-us.jpg" class="d-block w-100 h-100" alt="about us" class="img-responsive">
+      <img src="img/backgrounda-about.jpg" class="d-block w-100 h-100" alt="about us" class="img-responsive">
     </div>
 
     <div id="services">
-      <img src="img/services.jpg" class="d-block w-100 h-100" alt="services" class="img-responsive">
+      <img src="img/backgrounda-services.jpg" class="d-block w-100 h-100" alt="services" class="img-responsive">
     </div>
 
     <div id="contact"> 
-      <img src="img/contact-us.jpg" class="d-block w-100 h-100" alt="services" class="img-responsive">
+      <img src="img/backgrounda-contact.jpg" class="d-block w-100 h-100" alt="services" class="img-responsive">
     </div>
 
-    <!-- Bootstrap JavaScript -->
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="js/jquery-3.6.0.js"></script> <!-- JQuery 3.6.0 -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap -->
+    <script src="js/index.js"></script> <!-- Personal Scripts -->
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/70f5c30c3e.js" crossorigin="anonymous"></script>
