@@ -120,8 +120,8 @@
 /**********************************/
 /*          MEDIA QUERIES         */
 /**********************************/
-/* Small devices (mobiles, 768px and up)*/
-@media (min-width: 768px){
+/* Small devices (mobiles, 300px and up)*/
+@media (min-width: 300px){
     /* NAVBAR Content */
 
     /* end of NAVBAR Content */
@@ -137,6 +137,37 @@
             min-height: 100vh;
             width: auto;
             display: inline-block;
+        }
+
+    /* end of HOME Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* SERVICES Content */
+
+    /* end of SERVICES Content */
+
+    /* CONTACT Content */
+
+    /* end of CONTACT Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+}
+/* end of min-width width 768px */
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px){
+    /* NAVBAR Content */
+
+    /* end of NAVBAR Content */
+
+    /* HOME Content */
+        .carousel-inner img {
+            max-height: 100vh;
         }
 
     /* end of HOME Content */
