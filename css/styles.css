@@ -179,16 +179,20 @@
     width: 10%;
 }
 
+.icons a {
+    font-size: 14px;
+}
+
 .adresses {
     float: right;
     width: 50%;
-    padding-left: 40px;
+    text-align: center;
 }
 
 .copyright {
     clear: both;
     text-align: center;
-    width: 50%;
+    padding-top: 20px;
 }
 
 .copyright i {
@@ -307,6 +311,13 @@
     /* ABOUT Content */
 
     /* end of ABOUT Content */
+
+    /* FOOTER Content */
+        #footer {
+            padding-left: 100px;
+            padding-right: 100px
+        }
+    /* end of FOOTER content */
 }
 /* end of min-width width 992px */
 
@@ -340,6 +351,13 @@
     /* ABOUT Content */
 
     /* end of ABOUT Content */
+
+    /* FOOTER Content */
+        #footer {
+            padding-left: 250px;
+            padding-right: 250px
+        }
+    /* end of FOOTER content */
 }
 /* end of min-width width 1200px */
 
@@ -371,5 +389,12 @@
     /* ABOUT Content */
 
     /* end of ABOUT Content */
+
+    /* FOOTER Content */
+    #footer {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+    /* end of FOOTER content */
 }
 /* end of min-width width 1600px */
