@@ -107,11 +107,13 @@
 /*            ABOUT US            */
 /**********************************/
 #about {
-    padding: 20px;
+    padding: 80px 20px 20px 20px;
+    background-image: url("../img/backgrounda-about.jpg");
+    background-position: bottom;
 }
 
 #about .title {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.75);
     text-align: center;
     color: #FFF;
     font-family: Poppins;
@@ -127,7 +129,7 @@
 }
 
 #about .description-about {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(39, 35, 35, 0.73);
     border-radius: 10px;
     padding: 20px;
     text-align: justify;
@@ -136,6 +138,10 @@
 }
 
 #about .description-about p {
+    margin-bottom: 0px;
+}
+
+#about .description-about ul {
     margin-bottom: 0px;
 }
 
