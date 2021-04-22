@@ -106,7 +106,57 @@
 /**********************************/
 /*            ABOUT US            */
 /**********************************/
+#about {
+    padding: 20px;
+}
 
+#about .title {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    color: #FFF;
+    font-family: Poppins;
+    font-weight: 400;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    padding: 10px;
+}
+
+#about h2 {
+    margin-bottom: 0px;
+}
+
+#about .description-about {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+    color: #FFF;
+    margin-bottom: 45px;
+}
+
+#about .description-about p {
+    margin-bottom: 0px;
+}
+
+#about .title-2 {
+    margin-top: 20px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#about .title-2 .item {
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #FFF;
+    font-family: Poppins;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.9);
+}
 
 /**********************************/
 /*            SERVICES            */
@@ -137,11 +187,11 @@
     color: #40E0D0;
 }
 
-.title {
+#footer .title {
     margin-top: 5px;
 }
 
-.title h1 {
+#footer .title h1 {
     font-size: 16px;
     font-family: Poppins;
     font-weight: 400;
