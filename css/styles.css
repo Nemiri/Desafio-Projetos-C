@@ -168,6 +168,56 @@
 /*            SERVICES            */
 /**********************************/
 
+#services {
+    padding: 80px 20px 20px 20px;
+    background-image: url("../img/backgrounda-services.jpg");
+    background-position: bottom;
+}
+
+#services .title {
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    color: #FFF;
+    font-family: Poppins;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#services .services-about{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding-top: 8%;
+    color: #FFF;
+    margin-bottom: 10%;
+}
+
+#services .web-sites h3{
+    text-align: center;
+}
+
+#services .web-sites{
+    background-color: rgba(39, 35, 35, 0.73);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+    color: #FFF;
+    width: 40%;
+}
+
+#services .social-midia h3{
+    text-align: center;
+}
+
+#services .social-midia{
+    background-color: rgba(39, 35, 35, 0.73);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+    color: #FFF;
+    width: 40%;
+}
 
 /**********************************/
 /*             CONTACT            */
