@@ -5,14 +5,14 @@
 /**********************************/
 /*             SUMMARY            */
 /*
-    1 - GLOBAL CONFIGS
-    2 - NAVBAR
-    3 - HOME
-    4 - ABOUT
-    5 - SERVICES
-    6 - CONTACT
-    7 - FOOTER
-    8 - MEDIA QUERIES
+1 - GLOBAL CONFIGS
+2 - NAVBAR
+3 - HOME
+4 - ABOUT
+5 - SERVICES
+6 - CONTACT
+7 - FOOTER
+8 - MEDIA QUERIES
 */
 
 /**********************************/
@@ -63,7 +63,7 @@
     font-weight: bold;
     text-decoration: none;
     color: #FFF;
-
+    
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -71,9 +71,9 @@
 
 .navbar-nav a:hover {
     color: #40E0D0;
-
+    
     transition: all 0.5s ease;
-
+    
     -moz-transform: scale(1.02);
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
@@ -251,9 +251,9 @@
     font-size: 16px;
     font-family: Poppins;
     font-weight: 400;
-
+    
     text-align: center;
-
+    
     margin-bottom: 0px;
 }
 
@@ -265,12 +265,12 @@
     font-size: 14px;
     font-family: Poppins;
     font-weight: 400;
-
+    
     text-align: center;
-
+    
     width: 50%;
     margin-bottom: 5px;
-
+    
     float: left;
 }
 
@@ -314,7 +314,7 @@
     .navbar-brand {
         padding-left: 0.5rem;
     }
-
+    
     .navbar-brand img {
         width: 120px;
         height: 50px;
@@ -322,38 +322,39 @@
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
     }
-
+    
     /* end of NAVBAR Content */
-
+    
     /* HOME Content */
-        .carousel-inner {
-            width: 100%;
-            height: auto;
-        }
-
-        .carousel-inner img {
-            object-fit: cover;
-            min-height: 100vh;
-            width: auto;
-            display: inline-block;
-        }
-
+    .carousel-inner {
+        width: 100%;
+        height: auto;
+    }
+    
+    .carousel-inner img {
+        object-fit: cover;
+        min-height: 100vh;
+        width: auto;
+        display: inline-block;
+    }
+    
     /* end of HOME Content */
-
+    
     /* ABOUT Content */
-
+    
     /* end of ABOUT Content */
-
+    
     /* SERVICES Content */
-
+    
+    
     /* end of SERVICES Content */
-
+    
     /* CONTACT Content */
-
+    
     /* end of CONTACT Content */
-
+    
     /* ABOUT Content */
-
+    
     /* end of ABOUT Content */
 }
 /* end of min-width width 768px */
@@ -361,30 +362,31 @@
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px){
     /* NAVBAR Content */
-
+    
     /* end of NAVBAR Content */
-
+    
     /* HOME Content */
-        .carousel-inner img {
-            max-height: 100vh;
-        }
-
+    .carousel-inner img {
+        max-height: 100vh;
+    }
+    
     /* end of HOME Content */
-
+    
     /* ABOUT Content */
-
+    
     /* end of ABOUT Content */
-
+    
     /* SERVICES Content */
-
+    
+    
     /* end of SERVICES Content */
-
+    
     /* CONTACT Content */
-
+    
     /* end of CONTACT Content */
-
+    
     /* ABOUT Content */
-
+    
     /* end of ABOUT Content */
 }
 /* end of min-width width 768px */
@@ -392,37 +394,37 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px){
     /* NAVBAR Content */
-
+    
     /* end of NAVBAR Content */
-
+    
     /* HOME Content */
-        .carousel-inner img {
-            max-height: 100vh;
-        }
-
+    .carousel-inner img {
+        max-height: 100vh;
+    }
+    
     /* end of HOME Content */
-
+    
     /* ABOUT Content */
-
+    
     /* end of ABOUT Content */
-
+    
     /* SERVICES Content */
-
+    
     /* end of SERVICES Content */
-
+    
     /* CONTACT Content */
-
+    
     /* end of CONTACT Content */
-
+    
     /* ABOUT Content */
-
+    
     /* end of ABOUT Content */
-
+    
     /* FOOTER Content */
-        #footer {
-            padding-left: 100px;
-            padding-right: 100px
-        }
+    #footer {
+        padding-left: 100px;
+        padding-right: 100px
+    }
     /* end of FOOTER content */
 }
 /* end of min-width width 992px */
@@ -430,39 +432,39 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px){
     /* NAVBAR Content */
-        .navbar-brand {
-            padding-left: 5rem;
-        }
+    .navbar-brand {
+        padding-left: 5rem;
+    }
     /* end of NAVBAR Content */
-
+    
     /* HOME Content */
-        .carousel-inner img {
-            max-height: 100vh;
-        }
-
+    .carousel-inner img {
+        max-height: 100vh;
+    }
+    
     /* end of HOME Content */
-
+    
     /* ABOUT Content */
-
+    
     /* end of ABOUT Content */
-
+    
     /* SERVICES Content */
-
+    
     /* end of SERVICES Content */
-
+    
     /* CONTACT Content */
-
+    
     /* end of CONTACT Content */
-
+    
     /* ABOUT Content */
-
+    
     /* end of ABOUT Content */
-
+    
     /* FOOTER Content */
-        #footer {
-            padding-left: 250px;
-            padding-right: 250px
-        }
+    #footer {
+        padding-left: 250px;
+        padding-right: 250px
+    }
     /* end of FOOTER content */
 }
 /* end of min-width width 1200px */
@@ -470,32 +472,32 @@
 /* Extra large devices (extra large sktops, 1600px and up) */
 @media (min-width: 1600px){
     /* NAVBAR Content */
-
+    
     /* end of NAVBAR Content */
-
+    
     /* HOME Content */
-        .carousel-inner img {
-            max-height: 100vh;
-        }
-
+    .carousel-inner img {
+        max-height: 100vh;
+    }
+    
     /* end of HOME Content */
-
+    
     /* ABOUT Content */
-
+    
     /* end of ABOUT Content */
-
+    
     /* SERVICES Content */
-
+    
     /* end of SERVICES Content */
-
+    
     /* CONTACT Content */
-
+    
     /* end of CONTACT Content */
-
+    
     /* ABOUT Content */
-
+    
     /* end of ABOUT Content */
-
+    
     /* FOOTER Content */
     #footer {
         padding-left: 350px;

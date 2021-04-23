@@ -21,3 +21,10 @@ $(function() {
         });
     });
 });
+
+
+function mudaChange(div){
+
+    el = document.getElementById(div);
+    el.classList.toggle('d-none');
+}

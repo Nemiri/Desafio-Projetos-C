@@ -99,23 +99,23 @@
         <p>A ELEVE é uma empresa especializada em soluções de marketing digital e de qualidade para microempreendedores, empresas de pequeno e médio porte, que visa auxiliá-las no seu crescimento, desenvolvimento e alcance de público e clientes.</p>
       </div>
       <div class="title-2">
-        <button id="btn_missao" type="button" class="item">
+        <button id="btn_missao" type="button" class="item" onclick="mudaChange('missao')">
           <h2>Missão</h2>
         </button>
-        <button class="item">
+        <button class="item" onclick="mudaChange('visao')">
           <h2>Visão</h2>
         </button>
-        <button class="item">
+        <button class="item" onclick="mudaChange('valores')">
           <h2>Valores</h2>
         </button>
       </div>
-      <div id="missao" class="col-lg-8 m-auto mt-3 description-about">
+      <div id="missao" class=" d-none col-lg-8 m-auto mt-3 description-about">
         <p>Apresentar soluções de marketing digital inovadoras e de qualidade, objetivando o fortalecimento das marcas/produtos de nossos clientes diretos e indiretos, aproximando e aprimorando as relações entre a empresa — cliente — e seu público-alvo, contribuindo assim em seu crescimento e lucratividade</p>
       </div>
-      <div class="col-lg-8 m-auto mt-3 description-about">
+      <div id="visao" class=" d-none col-lg-8 m-auto mt-3 description-about">
         <p>Estar entre as 12 melhores agências de consultoria de marketing atuantes no mercado brasileiro.</p>
       </div>
-      <div class="col-lg-8 m-auto mt-3 description-about">
+      <div id="valores" class="d-none col-lg-8 m-auto mt-3 description-about">
         <ul>
           <li>
             Seriedade
@@ -144,11 +144,11 @@
       </div>
       <div class="col-lg-12 services-about">
         <div class="col-lg-6 m-5 web-sites">
-          <h3>Websites</h3>
+          <h3>Websites <i class="fas fa-globe"></i></h3>
           <p>Elaboração, desenvolvimento e publicação da plataforma de negócio do cliente na internet para gerar impacto nas pessoas e maior lucro econômico para a organização.</p>
         </div>
         <div class=" col-lg-6 m-5 social-midia">
-          <h3>Social Midia</h3>
+          <h3>Social Midia <i class="fas fa-cog"></i></h3>
           <p>Elaboração e execução de um plano para gerenciamento das atividades da organização nas redes sociais para conseguir engajamento e alcançar as metas impostas.</p>
         </div>
       </div>
