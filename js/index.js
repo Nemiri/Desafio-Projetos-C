@@ -22,9 +22,19 @@ $(function() {
     });
 });
 
-
-function mudaChange(div){
-
-    el = document.getElementById(div);
-    el.classList.toggle('d-none');
+/* ABOUT US - Changing Div Missao/Visao/Valor */
+function showHide(valor) {
+    if(valor === 1){
+        $('.mission').addClass("active");
+        $('.vision').removeClass("active");
+        $('.value').removeClass("active");
+    } else if(valor === 2){
+        $('.vision').addClass("active");
+        $('.value').removeClass("active");
+        $('.mission').removeClass("active");
+    } else {
+        $('.value').addClass("active");
+        $('.vision').removeClass("active");
+        $('.mission').removeClass("active");
+    }
 }
