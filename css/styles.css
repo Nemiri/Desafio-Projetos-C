@@ -1,0 +1,624 @@
+/* Custom CSS */
+/* Imports from Bootstrap */
+@import "../bootstrap/css/bootstrap.min.css";
+
+/**********************************/
+/*             SUMMARY            */
+/*
+    1 - GLOBAL CONFIGS
+    2 - NAVBAR
+    3 - HOME
+    4 - ABOUT
+    5 - SERVICES
+    6 - CONTACT
+    7 - FOOTER
+    8 - MEDIA QUERIES
+*/
+
+/**********************************/
+/*          GLOBAL CONFIGS        */
+/**********************************/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/**********************************/
+/*              NAVBAR            */
+/**********************************/
+.navbar {
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.navbar i {
+    color: #FFF;
+}
+
+.navbar-brand img {
+    width: 200px;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.navbar-brand img:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.nav-item {
+    max-height: 52px;
+    margin-right: 5rem;
+}
+
+.nav-link.active {
+    color: #40E0D0;
+}
+
+.navbar-nav a {
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFF;
+
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.navbar-nav a:hover {
+    color: #40E0D0;
+
+    transition: all 0.5s ease;
+
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.navbar-toggler i {
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.navbar-toggler i:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.collapse.navbar-collapse hr {
+    color: #FFF;
+}
+
+/**********************************/
+/*              HOME              */
+/**********************************/
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+    opacity: 1;
+}
+
+/**********************************/
+/*            ABOUT US            */
+/**********************************/
+#about {
+    padding: 80px 20px 20px 20px;
+    background-image: url("../img/backgrounda-about.jpg");
+    color: #FFF;
+    font-family: Poppins;
+}
+
+#about .box-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .title {
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    padding: 10px;
+    width: 100%;
+}
+
+#about h2 {
+    margin-bottom: 0px;
+}
+
+#about .description-about {
+    background-color: rgba(39, 35, 35, 0.73);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+    margin-bottom: 45px;
+}
+
+#about .description-about p {
+    margin-bottom: 0px;
+}
+
+#about .title-2 {
+    margin-top: 20px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#about .btn-dark {
+    width: 30%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #FFF;
+    font-family: Poppins;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-color: #FFF;
+    border-width: 0px;
+}
+
+#about button:hover {
+    background-color: #FFF;
+    border-color: #000;
+    color: #000;
+}
+
+#about button:focus {
+    background-color: #FFF;
+    border-color: #000;
+    color: #000;
+}
+
+#about .description-container {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+#about .description-about-2 {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(39, 35, 35, 0.73);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+    color: #FFF;
+    transform: scaleY(0);
+    transition: transform 1s;
+    transform-origin: top left;
+}
+
+#about .description-about-2 p {
+    margin-bottom: 0px;
+}
+
+#about .description-about-2 ul {
+    margin-bottom: 0px;
+}
+
+#about .active {
+    transform: scaleY(1);
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+/**********************************/
+/*            SERVICES            */
+/**********************************/
+#services {
+    padding: 80px 20px 20px 20px;
+    background-image: url("../img/backgrounda-services.jpg");
+    color: #FFF;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+#services .box-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#services .title {
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    padding: 10px;
+    width: 100%;
+}
+
+#services .title h2 {
+    margin-bottom: 0px;
+}
+
+#services .boxes {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+#services .component {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 233px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#services .component:hover {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.0.5);
+    transform: scale(1.05);
+}
+
+#services .component h2 {
+    margin-bottom: 20px;
+}
+
+#services .component p {
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+/**********************************/
+/*             CONTACT            */
+/**********************************/
+#contact {
+    padding: 80px 20px 20px 20px;
+    background-image: url("../img/backgrounda-contact.jpg");
+    color: #FFF;
+    font-family: Poppins;
+    font-weight: 400;
+}
+/**********************************/
+/*             FOOTER             */
+/**********************************/
+#footer {
+    color: #FFF;
+    background-color:rgba(0, 0, 0);
+    padding: 10px;
+    font-size: 12px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#footer a:active {
+    text-decoration: none;
+    color: #40E0D0;
+}
+
+#footer .title {
+    margin-top: 5px;
+}
+
+#footer .title h1 {
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+
+    text-align: center;
+
+    margin-bottom: 0px;
+}
+
+.sub-title {
+    margin-top: 5px;
+}
+
+.sub-title h2 {
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+
+    text-align: center;
+
+    width: 50%;
+    margin-bottom: 5px;
+
+    float: left;
+}
+
+.icons {
+    clear: both;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.icons i {
+    width: 10%;
+}
+
+.icons a {
+    font-size: 14px;
+}
+
+.adresses {
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+.copyright {
+    clear: both;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.copyright i {
+    color: #E74C3C;
+}
+
+/**********************************/
+/*          MEDIA QUERIES         */
+/**********************************/
+/* Small devices (mobiles, 300px and up)*/
+@media (min-width: 300px){
+    /* NAVBAR Content */
+    .navbar-brand {
+        padding-left: 0.5rem;
+    }
+
+    .navbar-brand img {
+        width: 120px;
+        height: 50px;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    /* end of NAVBAR Content */
+
+    /* HOME Content */
+        .carousel-inner {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-inner img {
+            object-fit: cover;
+            min-height: 100vh;
+            width: auto;
+            display: inline-block;
+        }
+
+    /* end of HOME Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* SERVICES Content */
+
+    /* end of SERVICES Content */
+
+    /* CONTACT Content */
+
+    /* end of CONTACT Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+}
+/* end of min-width width 768px */
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px){
+    /* NAVBAR Content */
+
+    /* end of NAVBAR Content */
+
+    /* HOME Content */
+        .carousel-inner img {
+            max-height: 100vh;
+        }
+
+    /* end of HOME Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* SERVICES Content */
+        #services .title {
+            width: 40%;
+        }
+
+        #services .boxes {
+            margin-top: 20px;
+            margin-bottom: 45px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        #services .component {
+            width: 50%;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    /* end of SERVICES Content */
+
+    /* CONTACT Content */
+
+    /* end of CONTACT Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* FOOTER Content */
+        #footer {
+            padding-left: 150px;
+            padding-right: 150px
+        }
+    /* end of FOOTER content */
+}
+/* end of min-width width 768px */
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px){
+    /* NAVBAR Content */
+
+    /* end of NAVBAR Content */
+
+    /* HOME Content */
+        .carousel-inner img {
+            max-height: 100vh;
+        }
+
+    /* end of HOME Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* SERVICES Content */
+        #services .component{
+            min-height: 200px;
+        }
+
+        #services .component {
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+    /* end of SERVICES Content */
+
+    /* CONTACT Content */
+
+    /* end of CONTACT Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* FOOTER Content */
+        #footer {
+            padding-left: 200px;
+            padding-right: 200px
+        }
+    /* end of FOOTER content */
+}
+/* end of min-width width 992px */
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){
+    /* NAVBAR Content */
+        .navbar-brand {
+            padding-left: 5rem;
+        }
+    /* end of NAVBAR Content */
+
+    /* HOME Content */
+        .carousel-inner img {
+            max-height: 100vh;
+        }
+
+    /* end of HOME Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* SERVICES Content */
+        #services .component {
+            margin-right: 75px;
+            margin-left: 75px;
+        }
+    /* end of SERVICES Content */
+
+    /* CONTACT Content */
+
+    /* end of CONTACT Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* FOOTER Content */
+        #footer {
+            padding-left: 350px;
+            padding-right: 350px
+        }
+    /* end of FOOTER content */
+}
+/* end of min-width width 1200px */
+
+/* Extra large devices (extra large sktops, 1600px and up) */
+@media (min-width: 1600px){
+    /* NAVBAR Content */
+
+    /* end of NAVBAR Content */
+
+    /* HOME Content */
+        .carousel-inner img {
+            max-height: 100vh;
+        }
+
+    /* end of HOME Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* SERVICES Content */
+        #services .component {
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+    /* end of SERVICES Content */
+
+    /* CONTACT Content */
+
+    /* end of CONTACT Content */
+
+    /* ABOUT Content */
+
+    /* end of ABOUT Content */
+
+    /* FOOTER Content */
+    #footer {
+        padding-left: 500px;
+        padding-right: 500px;
+    }
+    /* end of FOOTER content */
+}
+/* end of min-width width 1600px */
