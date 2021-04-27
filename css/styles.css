@@ -111,7 +111,6 @@
     background-image: url("../img/backgrounda-about.jpg");
     color: #FFF;
     font-family: Poppins;
-    height: 680px;
 }
 #about .container {
     width: 50vw;
@@ -126,13 +125,14 @@
 }
 
 #about .title {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: #000000bf;
     text-align: center;
     border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 45px;
     padding: 10px;
-    width: 55%;
+    width: 100%;
+    white-space: nowrap;
 }
 
 #about h2 {
@@ -192,7 +192,7 @@
 #about .description-about-2 {
     position: absolute;
     width: 100%;
-    background-color: rgba(39, 35, 35, 0.73);
+    background-color: #272323ba;
     border-radius: 10px;
     padding: 20px;
     text-align: justify;
@@ -244,6 +244,7 @@
     color: #FFF;
     font-family: Poppins;
     font-weight: 400;
+    min-height: 100vh;
 }
 
 #services .box-title {
@@ -311,6 +312,52 @@
     font-weight: 400;
     height: 100vh;
 }
+#contact .box-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#contact .title {
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    padding: 10px;
+    width: 100%;
+}
+#contact .input[type=text]:focus, select, textarea{
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 6px 0 8px 0;
+    resize: vertical;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+#contact .input[type=submit] {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+#contact .input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+#contact .container {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+  }
 /**********************************/
 /*             FOOTER             */
 /**********************************/
@@ -430,6 +477,17 @@
 
     /* ABOUT Content */
 
+        #about .container{
+            min-height: 115vh;
+            max-height: 130vh;
+            width: 100%;
+        }
+        #about .description-about{
+            font-size: 14px;
+        }
+        #about .description-about-2{
+            font-size: 14px;
+        }
     /* end of ABOUT Content */
 
     /* SERVICES Content */
@@ -512,17 +570,31 @@
         }
 
     /* end of HOME Content */
-
+    
     /* ABOUT Content */
-
+        #about {
+            min-height:100vh;
+        }
+        #about .container {
+            width: 100vw;
+            height: 100vh;
+        }
+        #about .description-about{
+            font-size: 16px;
+        }
+        #about .description-about-2{
+            font-size: 16px;
+        }
+        #about 
     /* end of ABOUT Content */
 
     /* SERVICES Content */
+        #services .container{
+            display: flex;
+            align-items: center;
+        }
         #services .component{
             min-height: 200px;
-        }
-
-        #services .component {
             margin-right: 50px;
             margin-left: 50px;
         }
