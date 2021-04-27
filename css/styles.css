@@ -111,13 +111,18 @@
     background-image: url("../img/backgrounda-about.jpg");
     color: #FFF;
     font-family: Poppins;
+    height: 680px;
 }
-
+#about .container {
+    width: 50vw;
+    height: 50vh;
+}
 #about .box-title {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #about .title {
@@ -127,7 +132,7 @@
     margin-top: 20px;
     margin-bottom: 45px;
     padding: 10px;
-    width: 100%;
+    width: 55%;
 }
 
 #about h2 {
@@ -304,6 +309,7 @@
     color: #FFF;
     font-family: Poppins;
     font-weight: 400;
+    height: 100vh;
 }
 /**********************************/
 /*             FOOTER             */
