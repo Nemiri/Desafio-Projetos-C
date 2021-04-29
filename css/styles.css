@@ -312,6 +312,7 @@
     font-weight: 400;
     height: 100vh;
 }
+
 #contact .box-title {
     display: flex;
     flex-direction: row;
@@ -338,17 +339,18 @@
   }
   
   /* Style the submit button with a specific background color etc */
-#contact .input[type=submit] {
-    background-color: rgba(0, 0, 0, 0.75);
-    color: black;
+  #contact .submit[type=submit] {
+    background-color: #1b663e;
+    color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: Poppins;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
-#contact .input[type=submit]:hover {
+#contact .submit[type=submit]:hover {
     background-color: #45a049;
   }
   
