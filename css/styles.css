@@ -219,7 +219,15 @@ body {
 #contact {
     padding: 80px 20px 0px;
     background-image: url("../img/backgrounda-contact.jpg");
+
     min-height: 100vh;
+    color: #FFF;
+    font-family: Poppins;
+    font-weight: 400;
+    height: 100vh;
+}
+
+#contact .box-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,6 +246,47 @@ body {
     background: rgba(0, 0, 0, 0.8);
     padding: 30px 15px;
     border-radius: 10px;
+  
+#contact .input[type=text]:focus, select, textarea{
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 6px 0 8px 0;
+    resize: vertical;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  #contact .submit[type=submit] {
+    background-color: #1b663e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Poppins;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+#contact .submit[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+#contact .container {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+  }
+/**********************************/
+/*             FOOTER             */
+/**********************************/
+#footer {
+    color: #FFF;
+    background-color:rgba(0, 0, 0);
+    padding: 10px;
+    font-size: 12px;
 }
 
 #contact input, select, textarea {
