@@ -23,6 +23,11 @@
     padding: 0px;
 }
 
+body {
+    color: #FFF;
+    font-family: Poppins;
+}
+
 /**********************************/
 /*              NAVBAR            */
 /**********************************/
@@ -107,197 +112,104 @@
 /*            ABOUT US            */
 /**********************************/
 #about {
-    padding: 80px 20px 20px 20px;
+    padding: 80px 20px 0px;
     background-image: url("../img/backgrounda-about.jpg");
-    color: #FFF;
-    font-family: Poppins;
-}
-#about .container {
-    width: 50vw;
-    height: 50vh;
-}
-#about .box-title {
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
-#about .title {
-    background-color: #000000bf;
-    text-align: center;
+#about .box-title {
+    background: rgba(0, 0, 0, 0.8);
+    width: fit-content;
+    padding: 10px 30px;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 45px;
-    padding: 10px;
+    margin-bottom: 1.5rem;
+}
+
+#about .box-text {
+    background: rgba(0, 0, 0, 0.8);
     width: 100%;
-    white-space: nowrap;
-}
-
-#about h2 {
-    margin-bottom: 0px;
-}
-
-#about .description-about {
-    background-color: rgba(39, 35, 35, 0.73);
+    padding: 15px;
     border-radius: 10px;
-    padding: 20px;
     text-align: justify;
-    margin-bottom: 45px;
+    margin-bottom: 2rem;
 }
 
-#about .description-about p {
-    margin-bottom: 0px;
+#about .active {
+    background-color: #FFF;
+    color: #000;
 }
 
-#about .title-2 {
-    margin-top: 20px;
-    margin-bottom: 45px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#about .btn-dark {
-    width: 30%;
+#about button {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
     border-radius: 5px;
-    padding: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: #FFF;
-    font-family: Poppins;
-    background-color: rgba(0, 0, 0, 0.75);
-    border-color: #FFF;
-    border-width: 0px;
+    padding: 10px 15px;
+    margin-bottom: 1.5rem;
 }
 
 #about button:hover {
     background-color: #FFF;
-    border-color: #000;
     color: #000;
 }
 
 #about button:focus {
     background-color: #FFF;
-    border-color: #000;
     color: #000;
 }
 
-#about .description-container {
-    position: relative;
-    margin-bottom: 45px;
-}
-
-#about .description-about-2 {
-    position: absolute;
-    width: 100%;
-    background-color: #272323ba;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: justify;
-    color: #FFF;
-    transform: scaleY(0);
-    transition: transform 1s;
-    transform-origin: top left;
-}
-
-#about .description-about-2 p {
+#about h2, p, ul {
     margin-bottom: 0px;
-}
-
-#about .description-about-2 ul {
-    margin-bottom: 0px;
-}
-
-#about .active {
-    transform: scaleY(1);
-    -webkit-animation: fadeIn 1s ease-in-out;
-    -moz-animation: fadeIn 1s ease-in-out;
-    -o-animation: fadeIn 1s ease-in-out;
-    animation: fadeIn 1s ease-in-out;
-}
-
-@-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; } 
-    }
-@-moz-keyframes fadeIn {
-0% { opacity: 0;}
-100% { opacity: 1; }
-}
-@-o-keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }
-}
-@keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }
 }
 
 /**********************************/
 /*            SERVICES            */
 /**********************************/
 #services {
-    padding: 80px 20px 20px 20px;
+    padding: 80px 20px 0px;
     background-image: url("../img/backgrounda-services.jpg");
-    color: #FFF;
-    font-family: Poppins;
-    font-weight: 400;
     min-height: 100vh;
-}
-
-#services .box-title {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-#services .title {
-    background-color: rgba(0, 0, 0, 0.75);
-    text-align: center;
+#services .box-title {
+    background: rgba(0, 0, 0, 0.8);
+    width: fit-content;
+    padding: 10px 30px;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 45px;
-    padding: 10px;
+    margin-bottom: 1.5rem;
+}
+
+#services .box-text {
+    background: rgba(0, 0, 0, 0.8);
     width: 100%;
-}
-
-#services .title h2 {
-    margin-bottom: 0px;
-}
-
-#services .boxes {
-    margin-top: 20px;
-    margin-bottom: 45px;
-}
-
-#services .component {
-    background-color: rgba(0, 0, 0, 0.75);
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
-    min-height: 233px;
+    text-align: justify;
+    margin-bottom: 2rem;
     -moz-transition: all 0.2s;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
-#services .component:hover {
+#services .box-text:hover {
     -moz-transform: scale(1.05);
     -webkit-transform: scale(1.0.5);
     transform: scale(1.05);
 }
 
-#services .component h2 {
-    margin-bottom: 20px;
+#services .box-text h2 {
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-#services .component p {
-    text-align: justify;
+#services .box-title h2 {
     margin-bottom: 0px;
 }
 
@@ -305,67 +217,80 @@
 /*             CONTACT            */
 /**********************************/
 #contact {
-    padding: 80px 20px 20px 20px;
+    padding: 80px 20px 0px;
     background-image: url("../img/backgrounda-contact.jpg");
-    color: #FFF;
-    font-family: Poppins;
-    font-weight: 400;
-    height: 100vh;
-}
-#contact .box-title {
+    min-height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#contact .title {
-    background-color: rgba(0, 0, 0, 0.75);
-    text-align: center;
+
+#contact .box-title {
+    background: rgba(0, 0, 0, 0.8);
+    width: fit-content;
+    padding: 10px 30px;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 45px;
-    padding: 10px;
-    width: 100%;
+    margin-bottom: 1.5rem;
 }
-#contact .input[type=text]:focus, select, textarea{
-    width: 100%;
-    padding: 30px;
-    border: 1px solid #ccc; 
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 6px 0 8px 0;
-    resize: vertical;
-  }
-  
-  /* Style the submit button with a specific background color etc */
-#contact .input[type=submit] {
-    background-color: rgba(0, 0, 0, 0.75);
-    color: black;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-#contact .input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-#contact .container {
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.75);
-    padding: 20px;
-  }
+
+#contact form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px 15px;
+    border-radius: 10px;
+}
+
+#contact input, select, textarea {
+    margin-bottom: 1.5rem;
+    height: 3rem;
+}
+
+#contact input:focus {
+    border-color:rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 1em grey;
+    box-shadow: inset 0 0 1em grey;
+}
+
+#contact select:focus {
+    border-color:rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 1em grey;
+    box-shadow: inset 0 0 1em grey;
+}
+
+#contact textarea:focus{
+    border-color:rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 1em grey;
+    box-shadow: inset 0 0 1em grey;
+}
+
+#contact textarea {
+    height: 8rem;
+}
+
+#contact h2 {
+    margin-bottom: 0px;
+}
+
+#contact button {
+    border-radius: 20px;
+    width: 10rem;
+}
+
+#contact button:hover {
+    background-color: #FFF;
+    color: #000;
+}
 /**********************************/
 /*             FOOTER             */
 /**********************************/
 #footer {
-    color: #FFF;
     background-color:rgba(0, 0, 0);
     padding: 10px;
     font-size: 12px;
+}
+
+#footer .adress{
+    text-align: center;
 }
 
 #footer a {
@@ -373,70 +298,29 @@
     color: #FFF;
 }
 
+#footer a:hover {
+    text-decoration: none;
+    color: #40E0D0;
+}
+
 #footer a:active {
     text-decoration: none;
     color: #40E0D0;
 }
 
-#footer .title {
-    margin-top: 5px;
+#footer h1 {
+    font-size: 18px;
 }
 
-#footer .title h1 {
+#footer h2 {
     font-size: 16px;
-    font-family: Poppins;
-    font-weight: 400;
-
-    text-align: center;
-
-    margin-bottom: 0px;
 }
 
-.sub-title {
-    margin-top: 5px;
-}
-
-.sub-title h2 {
-    font-size: 14px;
-    font-family: Poppins;
-    font-weight: 400;
-
-    text-align: center;
-
-    width: 50%;
-    margin-bottom: 5px;
-
-    float: left;
-}
-
-.icons {
-    clear: both;
-    float: left;
-    width: 50%;
-    text-align: center;
-}
-
-.icons i {
-    width: 10%;
-}
-
-.icons a {
-    font-size: 14px;
-}
-
-.adresses {
-    float: right;
-    width: 50%;
-    text-align: center;
-}
-
-.copyright {
-    clear: both;
-    text-align: center;
+#footer .copyright {
     padding-top: 20px;
 }
 
-.copyright i {
+#footer .copyright i {
     color: #E74C3C;
 }
 
@@ -446,17 +330,17 @@
 /* Small devices (mobiles, 300px and up)*/
 @media (min-width: 300px){
     /* NAVBAR Content */
-    .navbar-brand {
-        padding-left: 0.5rem;
-    }
+        .navbar-brand {
+            padding-left: 0.5rem;
+        }
 
-    .navbar-brand img {
-        width: 120px;
-        height: 50px;
-        -moz-transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-    }
+        .navbar-brand img {
+            width: 120px;
+            height: 50px;
+            -moz-transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+        }
 
     /* end of NAVBAR Content */
 
@@ -477,17 +361,6 @@
 
     /* ABOUT Content */
 
-        #about .container{
-            min-height: 115vh;
-            max-height: 130vh;
-            width: 100%;
-        }
-        #about .description-about{
-            font-size: 14px;
-        }
-        #about .description-about-2{
-            font-size: 14px;
-        }
     /* end of ABOUT Content */
 
     /* SERVICES Content */
@@ -514,30 +387,37 @@
         .carousel-inner img {
             max-height: 100vh;
         }
-
     /* end of HOME Content */
 
     /* ABOUT Content */
+        #about .box-title {
+            margin-bottom: 2.5rem;
+        }
 
+        #about .box-text {
+            font-size: 20px;
+            margin-bottom: 4rem;
+        }
+
+        #about button {
+            margin-bottom: 2.5rem;
+        }
     /* end of ABOUT Content */
 
     /* SERVICES Content */
-        #services .title {
-            width: 40%;
-        }
-
-        #services .boxes {
-            margin-top: 20px;
-            margin-bottom: 45px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+        #services .box-title {
+            padding: 15px 40px;
+            margin-bottom: 4rem;
         }
         
-        #services .component {
-            width: 50%;
-            margin-right: 20px;
-            margin-left: 20px;
+        #services .box-text {
+            font-size: 18px;
+            padding: 20px;
+            margin-bottom: 2rem;
+        }
+
+        #services .box-text h2 {
+            margin-bottom: 2rem;
         }
     /* end of SERVICES Content */
 
@@ -572,31 +452,32 @@
     /* end of HOME Content */
     
     /* ABOUT Content */
-        #about {
-            min-height:100vh;
+        #about .box-title {
+            margin-bottom: 3.5rem;
         }
-        #about .container {
-            width: 100vw;
-            height: 100vh;
+
+        #about .box-text {
+            width: 80%;
+            font-size: 20px;
+            margin-bottom: 5rem;
         }
-        #about .description-about{
-            font-size: 16px;
+
+        #about button {
+            margin-bottom: 3.5rem;
         }
-        #about .description-about-2{
-            font-size: 16px;
-        }
-        #about 
+
     /* end of ABOUT Content */
 
     /* SERVICES Content */
-        #services .container{
-            display: flex;
-            align-items: center;
+        #services .box-title {
+            padding: 15px 40px;
+            margin-bottom: 4.5rem;
+            font-size: 24px;
         }
-        #services .component{
-            min-height: 200px;
-            margin-right: 50px;
-            margin-left: 50px;
+        
+        #services .box-text {
+            font-size: 20px;
+            min-height: 243px;
         }
     /* end of SERVICES Content */
 
@@ -610,8 +491,8 @@
 
     /* FOOTER Content */
         #footer {
-            padding-left: 200px;
-            padding-right: 200px
+            padding-left: 250px;
+            padding-right: 250px
         }
     /* end of FOOTER content */
 }
@@ -633,13 +514,23 @@
     /* end of HOME Content */
 
     /* ABOUT Content */
+        #about .box-title {
+            margin-bottom: 4rem;
+        }
 
+        #about .box-text {
+            width: 70%;
+            margin-bottom: 5rem;
+        }
+
+        #about button {
+            margin-bottom: 4rem;
+        }
     /* end of ABOUT Content */
 
     /* SERVICES Content */
-        #services .component {
-            margin-right: 75px;
-            margin-left: 75px;
+        #services .box-text {
+            max-width: 85%;
         }
     /* end of SERVICES Content */
 
@@ -653,8 +544,8 @@
 
     /* FOOTER Content */
         #footer {
-            padding-left: 350px;
-            padding-right: 350px
+            padding-left: 375px;
+            padding-right: 375px
         }
     /* end of FOOTER content */
 }
@@ -694,8 +585,8 @@
 
     /* FOOTER Content */
     #footer {
-        padding-left: 500px;
-        padding-right: 500px;
+        padding-left: 600px;
+        padding-right: 600px;
     }
     /* end of FOOTER content */
 }
