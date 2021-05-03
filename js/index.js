@@ -1,6 +1,6 @@
 /* Custom Javascript */
 
-/* Mouse Scroll Active Link Navbar */
+/* NAVBAR - Mouse Scroll Active Link Navbar */
 $(function() {
     var links = $("#navbarNav a");
 
@@ -22,19 +22,69 @@ $(function() {
     });
 });
 
-/* ABOUT US - Changing Div Missao/Visao/Valor */
+/* ABOUT US - Buttons */
+var prev = 1;
 function showHide(valor) {
-    if(valor === 1){
-        $('.mission').addClass("active");
-        $('.vision').removeClass("active");
-        $('.value').removeClass("active");
-    } else if(valor === 2){
-        $('.vision').addClass("active");
-        $('.value').removeClass("active");
-        $('.mission').removeClass("active");
-    } else {
-        $('.value').addClass("active");
-        $('.vision').removeClass("active");
-        $('.mission').removeClass("active");
+    if(prev === valor){
+        return;
     }
+    else{
+        if(prev === 1){
+            var botao = $('.mission');
+            var texto = $('.mission-text');
+            var remove = 'mission-text';
+        }
+        else if(prev === 2){
+            var botao = $('.vision');
+            var texto = $('.vision-text');
+            var remove = 'vision-text';
+        }
+        else{
+            var botao = $('.values');
+            var texto = $('.values-text');
+            var remove = 'values-text';
+        }
+
+        if(valor === 1){
+            botao.removeClass("active");
+            $('.mission').addClass("active");
+            texto.addClass("mission-text");
+            texto.removeClass(remove);
+
+            if(prev === 2){
+                $(".mission-text p").remove();
+            }
+            else{
+                $(".mission-text ul").remove();
+            }
+
+            $(".mission-text").append("<p>Apresentar soluções de marketing digital inovadoras e de qualidade, objetivando o fortalecimento das marcas/produtos de nossos clientes diretos e indiretos, aproximando e aprimorando as relações entre a empresa — cliente — e seu público-alvo, contribuindo assim em seu crescimento e lucratividade.</p>");
+        }
+        else if(valor === 2){
+            botao.removeClass("active");
+            $('.vision').addClass("active");
+            texto.addClass("vision-text");
+            texto.removeClass(remove);
+
+            if(prev === 1){
+                $(".vision-text p").remove();
+            }
+            else{
+                $(".vision-text ul").remove();
+            }
+
+            $(".vision-text").append("<p>Estar entre as 12 melhores agências de consultoria de marketing atuantes no mercado brasileiro</p>");
+        }
+        else{
+            botao.removeClass("active");
+            $('.values').addClass("active");
+            texto.addClass("values-text");
+            texto.removeClass(remove);
+            $(".values-text p").remove();
+
+            $(".values-text").append("<ul><li>Satisfação do ciente</li><li>Competência</li><li>Seriedade</li><li>Inovação</li><li>Ética</li>")
+        }
+    }
+
+    prev = valor;
 }
