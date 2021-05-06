@@ -129,7 +129,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-#about .box-text {
+#about .box-text-top {
     background: rgba(0, 0, 0, 0.8);
     width: 100%;
     padding: 15px;
@@ -138,9 +138,24 @@ body {
     margin-bottom: 2rem;
 }
 
+#about .box-text {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: justify;
+    margin-bottom: 2rem;
+    /*REFERENTE A ANIMAÇÃO*/
+    overflow:hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.3s ease-in-out;
+}
+
 #about .active {
     background-color: #FFF;
     color: #000;
+    transform: scaleY(1);
 }
 
 #about button {
@@ -282,6 +297,7 @@ body {
     color: #000;
 }
 
+
 #contact .sucess {
     padding: 10px;
     border-radius: 10px;
@@ -303,6 +319,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 /**********************************/
 /*             FOOTER             */
 /**********************************/
@@ -310,6 +327,7 @@ body {
     background-color:rgba(0, 0, 0);
     padding: 10px;
     font-size: 12px;
+    bottom: 0;
 }
 
 #footer .adress{
