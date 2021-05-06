@@ -88,3 +88,36 @@ function showHide(valor) {
 
     prev = valor;
 }
+
+/* CONTACT - Confirm - Error box*/
+window.onload = CapturaParametrosUrl();
+
+function CapturaParametrosUrl() {
+    var url = window.location.href;
+
+    var res = url.split('?');
+    if (res[1] === undefined) {
+        return;
+    } else {
+        var parametros = res[1].split('&');
+        var parametroEncontrado = new Array(); 
+		var valorParametro = new Array();
+		
+		for (var cont = 0; cont<=1; cont++)
+		{
+			if (parametros[cont] !== undefined) 
+			{
+				captura = parametros[cont].split('=');				
+				
+				parametroEncontrado[cont] = captura[0];
+				valorParametro[cont] = captura[1];
+			}
+		}
+
+        if (valorParametro[0] === '1') {
+            $("#contact .sucess").css("display", "flex");
+        } else if (valorParametro[0] === '0') {
+            $("#contact .error").css("display", "flex");
+        }
+    }
+}

@@ -142,26 +142,26 @@
 
 <div id="contact">
       <div class="container">
-        <div class="row">
+        <div class="row d-flex align-items-center justify-content-center">
           <div class="col-12 d-flex align-items-center justify-content-center">
             <div class="box-title">
               <h2>ENTRE EM CONTATO</h2>
             </div>
           </div>
-          <form>
+          <form method="POST" action="php/contactform-process.php">
             <div class="row">
               <div class="col-md-6">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Seu nome">
+                  <input type="text" class="form-control" placeholder="Seu nome" name="name">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Seu email(email@dominio.com)">
+                  <input type="text" class="form-control" placeholder="Seu email(email@dominio.com)" name="email">
                 </div>
               </div>
               <div class="col-12">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="subject">
                   <option selected value="0">Assunto</option>
                   <option value="1">Assunto 1</option>
                   <option value="2">Assunto 2</option>
@@ -169,10 +169,14 @@
                 </select>
               </div>
               <div class="col-12">
-                <textarea class="form-control" placeholder="Sua mensagem..."></textarea>
+                <textarea class="form-control" placeholder="Sua mensagem..." name="message"></textarea>
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <div class="error">Houve algum erro ao enviar a sua mensagem.</div>
+                <div class="sucess">Mensagem enviada com sucesso!</div>
               </div>
               <div class="col-sm-12 d-flex justify-content-center">
-                <button type="button" class="btn btn-dark">ENVIAR</button>
+                <button type="submit" class="btn btn-dark">ENVIAR</button>
               </div>
             </div>
           </form>
