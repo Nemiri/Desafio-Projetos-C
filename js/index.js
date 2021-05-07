@@ -102,8 +102,8 @@ function formulario(){
          if(res){
             alert("Mensagem enviada!");
             
-            fContato.reset();          
-          
+            fContato.reset();           
+           
 
         }
         else{
