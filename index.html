@@ -148,18 +148,24 @@
               <h2>ENTRE EM CONTATO</h2>
             </div>
           </div>
-          <form>
+          <form method="post" id="fContato">
+              <!--Selecione o email para receber o formulario <input type=hidden value="emailcliente@gmail.com" name=email_cliente>-->
             <div class="row">
+              <fieldset id="nome">
               <div class="col-md-6">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Seu nome">
+                  <input type="text" class="form-control" placeholder="Seu nome" id="cNome">
                 </div>
               </div>
+            </fieldset>
+            <fieldset id="email">
               <div class="col-md-6">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Seu email(email@dominio.com)">
+                  <input type="email" class="form-control" placeholder="Seu email(email@dominio.com)" id="cEmail">
                 </div>
               </div>
+            </fieldset>
+          <fieldset id="assunto">
               <div class="col-12">
                 <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                   <option selected value="0">Assunto</option>
@@ -168,11 +174,14 @@
                   <option value="3">Assunto 3</option>
                 </select>
               </div>
+            </fieldset>
+          <fieldset id="mensagem">
               <div class="col-12">
-                <textarea class="form-control" placeholder="Sua mensagem..."></textarea>
+                <textarea class="form-control" id="cmensagem" placeholder="Sua mensagem..."></textarea>
               </div>
+            </fieldset>
               <div class="col-sm-12 d-flex justify-content-center">
-                <button type="button" class="btn btn-dark">ENVIAR</button>
+                <button type="button" id="btnEnviar"class="btn btn-dark" onClick="formulario()">ENVIAR </button>
               </div>
             </div>
           </form>

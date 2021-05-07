@@ -88,3 +88,27 @@ function showHide(valor) {
 
     prev = valor;
 }
+
+function formulario(){
+
+    
+
+    if((document.getElementById("cNome").value=='')||(document.getElementById("cEmail").value=='')||(document.getElementById("cmensagem").value=='')){
+        alert("Por favor preencha todos os campos do formulario");
+    }
+    else{
+        var res=confirm("Deseja enviar essa mensagem?");
+
+         if(res){
+            alert("Mensagem enviada!");
+            
+            fContato.reset();          
+          
+
+        }
+        else{
+           alert("Mensagem não enviada!");
+        }
+    }
+
+}
