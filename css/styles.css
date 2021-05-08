@@ -253,6 +253,7 @@ body {
     background: rgba(0, 0, 0, 0.8);
     padding: 30px 15px;
     border-radius: 10px;
+    margin-bottom: 5rem;
 }
 
 #contact input, select, textarea {
@@ -294,6 +295,29 @@ body {
 #contact button:hover {
     background-color: #FFF;
     color: #000;
+}
+
+
+#contact .sucess {
+    padding: 10px;
+    border-radius: 10px;
+    height: 3rem;
+    background-color: #03bb85;
+    margin-bottom: 2rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .error {
+    padding: 10px;
+    border-radius: 10px;
+    height: 3rem;
+    background-color: #C40233;
+    margin-bottom: 2rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
 
 /**********************************/
@@ -439,6 +463,14 @@ body {
     /* end of SERVICES Content */
 
     /* CONTACT Content */
+        #contact form {
+            max-width: 80vw;
+        }
+
+        #contact input, select, textarea {
+            margin-bottom: 2rem;
+            height: 3.5rem;
+        }
 
     /* end of CONTACT Content */
 
@@ -499,6 +531,9 @@ body {
     /* end of SERVICES Content */
 
     /* CONTACT Content */
+        #contact form {
+            max-width: 70vw;
+        }
 
     /* end of CONTACT Content */
 
@@ -552,6 +587,9 @@ body {
     /* end of SERVICES Content */
 
     /* CONTACT Content */
+        #contact form {
+            max-width: 50vw;
+        }
 
     /* end of CONTACT Content */
 
