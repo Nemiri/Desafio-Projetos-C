@@ -142,46 +142,41 @@
 
 <div id="contact">
       <div class="container">
-        <div class="row">
+        <div class="row d-flex align-items-center justify-content-center">
           <div class="col-12 d-flex align-items-center justify-content-center">
             <div class="box-title">
               <h2>ENTRE EM CONTATO</h2>
             </div>
           </div>
-          <form method="post" id="fContato">
-              <!--Selecione o email para receber o formulario <input type=hidden value="emailcliente@gmail.com" name=email_cliente>-->
+          <form method="POST" action="php/contactform-process.php">
             <div class="row">
-              <fieldset id="nome">
               <div class="col-md-6">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Seu nome" id="cNome">
+                  <input type="text" class="form-control" placeholder="Seu nome" name="name">
                 </div>
               </div>
-            </fieldset>
-            <fieldset id="email">
               <div class="col-md-6">
                 <div class="input-group">
-                  <input type="email" class="form-control" placeholder="Seu email(email@dominio.com)" id="cEmail">
+                  <input type="text" class="form-control" placeholder="Seu email(email@dominio.com)" name="email">
                 </div>
               </div>
-            </fieldset>
-          <fieldset id="assunto">
               <div class="col-12">
-                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="subject">
                   <option selected value="0">Assunto</option>
                   <option value="1">Assunto 1</option>
                   <option value="2">Assunto 2</option>
                   <option value="3">Assunto 3</option>
                 </select>
               </div>
-            </fieldset>
-          <fieldset id="mensagem">
               <div class="col-12">
-                <textarea class="form-control" id="cmensagem" placeholder="Sua mensagem..."></textarea>
+                <textarea class="form-control" placeholder="Sua mensagem..." name="message"></textarea>
               </div>
-            </fieldset>
+              <div class="col-12 d-flex justify-content-center">
+                <div class="error">Houve algum erro ao enviar a sua mensagem.</div>
+                <div class="sucess">Mensagem enviada com sucesso!</div>
+              </div>
               <div class="col-sm-12 d-flex justify-content-center">
-                <button type="button" id="btnEnviar"class="btn btn-dark" onClick="formulario()">ENVIAR </button>
+                <button type="submit" class="btn btn-dark">ENVIAR</button>
               </div>
             </div>
           </form>
@@ -229,5 +224,4 @@
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/70f5c30c3e.js" crossorigin="anonymous"></script>
   </body>
-</html> 
- 
+</html>
