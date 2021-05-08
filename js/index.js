@@ -89,26 +89,35 @@ function showHide(valor) {
     prev = valor;
 }
 
-function formulario(){
+/* CONTACT - Confirm - Error box*/
+window.onload = CapturaParametrosUrl();
 
-    
+function CapturaParametrosUrl() {
+    var url = window.location.href;
 
-    if((document.getElementById("cNome").value=='')||(document.getElementById("cEmail").value=='')||(document.getElementById("cmensagem").value=='')){
-        alert("Por favor preencha todos os campos do formulario");
-    }
-    else{
-        var res=confirm("Deseja enviar essa mensagem?");
+    var res = url.split('?');
+    if (res[1] === undefined) {
+        return;
+    } else {
+        var parametros = res[1].split('&');
+        var parametroEncontrado = new Array(); 
+		var valorParametro = new Array();
+		
+		for (var cont = 0; cont<=1; cont++)
+		{
+			if (parametros[cont] !== undefined) 
+			{
+				captura = parametros[cont].split('=');				
+				
+				parametroEncontrado[cont] = captura[0];
+				valorParametro[cont] = captura[1];
+			}
+		}
 
-         if(res){
-            alert("Mensagem enviada!");
-            
-            fContato.reset();           
-           
-
+        if (valorParametro[0] === '1') {
+            $("#contact .sucess").css("display", "flex");
+        } else if (valorParametro[0] === '0') {
+            $("#contact .error").css("display", "flex");
         }
-        else{
-           alert("Mensagem não enviada!");
-        }
     }
-
 }
