@@ -24,11 +24,15 @@ $(function() {
 
 /* ABOUT US - Buttons */
 var prev = 1;
+var ult_texto = $(".mission-text");
 function showHide(valor) {
     if(prev === valor){
         return;
     }
     else{
+
+        ult_texto.css("transform", "scaleY(0)");
+
         if(prev === 1){
             var botao = $('.mission');
             var texto = $('.mission-text');
@@ -46,47 +50,51 @@ function showHide(valor) {
         }
 
         if(valor === 1){
-            botao.removeClass("active");
-            $('.mission').addClass("active");
-            texto.addClass("mission-text");
-            texto.removeClass(remove);
+            setTimeout(function(){
+                texto.css("transform", "scaleY(1)");
+                texto.addClass("mission-text");
+                texto.removeClass(remove);
 
-            if(prev === 2){
-                $(".mission-text p").remove();
-            }
-            else{
-                $(".mission-text ul").remove();
-            }
+                $(".mission-text div").remove();
 
-            $(".mission-text").append("<p>Apresentar soluções de marketing digital inovadoras e de qualidade, objetivando o fortalecimento das marcas/produtos de nossos clientes diretos e indiretos, aproximando e aprimorando as relações entre a empresa — cliente — e seu público-alvo, contribuindo assim em seu crescimento e lucratividade.</p>");
+                $(".mission-text").append("<div class='box-text'><p>Apresentar soluções de marketing digital inovadoras e de qualidade, objetivando o fortalecimento das marcas/produtos de nossos clientes diretos e indiretos, aproximando e aprimorando as relações entre a empresa — cliente — e seu público-alvo, contribuindo assim em seu crescimento e lucratividade.</p></div>");
+            }, 500);
+
+            botao.removeClass("btnactive");
+            $('.mission').addClass("btnactive");
         }
         else if(valor === 2){
-            botao.removeClass("active");
-            $('.vision').addClass("active");
-            texto.addClass("vision-text");
-            texto.removeClass(remove);
+            setTimeout(function(){
+                texto.css("transform", "scaleY(1)");
+                texto.addClass("vision-text");
+                texto.removeClass(remove);
 
-            if(prev === 1){
-                $(".vision-text p").remove();
-            }
-            else{
-                $(".vision-text ul").remove();
-            }
+                $(".vision-text div").remove();
 
-            $(".vision-text").append("<p>Estar entre as 12 melhores agências de consultoria de marketing atuantes no mercado brasileiro</p>");
+                $(".vision-text").append("<div class='box-text'><p>Estar entre as 12 melhores agências de consultoria de marketing atuantes no mercado brasileiro</p></div>");
+            }, 500);
+
+            botao.removeClass("btnactive");
+            $('.vision').addClass("btnactive");
         }
         else{
-            botao.removeClass("active");
-            $('.values').addClass("active");
-            texto.addClass("values-text");
-            texto.removeClass(remove);
-            $(".values-text p").remove();
+            setTimeout(function(){
+                texto.css("transform", "scaleY(1)");
+                texto.addClass("values-text");
+                texto.removeClass(remove);
 
-            $(".values-text").append("<ul><li>Satisfação do ciente</li><li>Competência</li><li>Seriedade</li><li>Inovação</li><li>Ética</li>")
+                $(".values-text div").remove();
+
+                $(".values-text").append("<div class='box-text'><ul><li>Satisfação do ciente</li><li>Competência</li><li>Seriedade</li><li>Inovação</li><li>Ética</li></div>")
+            }, 500);
+
+            botao.removeClass("btnactive");
+            $('.values').addClass("btnactive");
         }
     }
 
     prev = valor;
+    ult_texto = texto;
 }
 
 /* CONTACT - Confirm - Error box*/

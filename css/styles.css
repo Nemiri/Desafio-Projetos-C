@@ -138,7 +138,13 @@ body {
     margin-bottom: 2rem;
 }
 
-#about .active {
+#about .mission-text, .values-text, .vision-text {
+    transform: scaleY(0);
+    transition: transform 1s;
+    transform-origin: top left;
+}
+
+#about .btnactive {
     background-color: #FFF;
     color: #000;
 }
@@ -282,7 +288,6 @@ body {
     color: #000;
 }
 
-
 #contact .sucess {
     padding: 10px;
     border-radius: 10px;
@@ -304,7 +309,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 /**********************************/
 /*             FOOTER             */
 /**********************************/
@@ -312,7 +316,6 @@ body {
     background-color:rgba(0, 0, 0);
     padding: 10px;
     font-size: 12px;
-    bottom: 0;
 }
 
 #footer .adress{
@@ -425,6 +428,11 @@ body {
             margin-bottom: 4rem;
         }
 
+        #about .box-text2 {
+            font-size: 20px;
+            margin-bottom: 4rem;
+        }
+
         #about button {
             margin-bottom: 2.5rem;
         }
@@ -496,6 +504,12 @@ body {
             margin-bottom: 5rem;
         }
 
+        #about .box-text2 {
+            width: 80%;
+            font-size: 20px;
+            margin-bottom: 5rem;
+        }
+
         #about button {
             margin-bottom: 3.5rem;
         }
@@ -556,6 +570,11 @@ body {
         }
 
         #about .box-text {
+            width: 70%;
+            margin-bottom: 5rem;
+        }
+
+        #about .box-text2 {
             width: 70%;
             margin-bottom: 5rem;
         }
