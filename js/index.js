@@ -46,9 +46,10 @@ function showHide(valor) {
         }
 
         if(valor === 1){
-            botao.removeClass("active");
-            $('.mission').addClass("active");
+            botao.removeClass("btn-active");
+            $('.mission').addClass("btn-active");
             texto.addClass("mission-text");
+            texto.addClass("active");
             texto.removeClass(remove);
 
             if(prev === 2){
@@ -61,9 +62,10 @@ function showHide(valor) {
             $(".mission-text").append("<p>Apresentar soluções de marketing digital inovadoras e de qualidade, objetivando o fortalecimento das marcas/produtos de nossos clientes diretos e indiretos, aproximando e aprimorando as relações entre a empresa — cliente — e seu público-alvo, contribuindo assim em seu crescimento e lucratividade.</p>");
         }
         else if(valor === 2){
-            botao.removeClass("active");
-            $('.vision').addClass("active");
+            botao.removeClass("btn-active");
+            $('.vision').addClass("btn-active");
             texto.addClass("vision-text");
+            texto.addClass("active");
             texto.removeClass(remove);
 
             if(prev === 1){
@@ -76,9 +78,10 @@ function showHide(valor) {
             $(".vision-text").append("<p>Estar entre as 12 melhores agências de consultoria de marketing atuantes no mercado brasileiro</p>");
         }
         else{
-            botao.removeClass("active");
-            $('.values').addClass("active");
+            botao.removeClass("btn-active");
+            $('.values').addClass("btn-active");
             texto.addClass("values-text");
+            texto.addClass("active");
             texto.removeClass(remove);
             $(".values-text p").remove();
 
